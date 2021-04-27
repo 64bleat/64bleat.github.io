@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+    html{
+        min-width: 100%;
+        min-height: 100%;
+        background-color: cornflowerblue;
+    }
+    body{
+        display: flex;
+        padding: 0%;
+        margin: 0%;
+        justify-content: center;;
+    }
+    header{
+        height: 0.6in;
+        border-color: black;
+        border-style: inset;
+        border-width: 0px 0px 1pt 0px;
+    }
+    h1{
+        margin: 0px;
+        font-family: serif;
+        font-size: 25pt;
+    }
+    h2{
+        border-color: black;
+        border-style: inset;
+        border-width: 1pt 0px;
+        margin: 0px;
+        padding-left: 0.125in;
+        font-family: serif;
+        font-size:14pt
+    }
+    h3{
+        margin:0px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    p, ul, li{
+        margin: 0px;
+        font-family:'Segoe UI', sans-serif;
+        font-weight:normal;
+        font-size: 11px;
+        line-height: 0.15in
+    }
+    i{
+        width: 0.25in;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .db{
+        background-color: rgba(255, 127, 80, 0.26);
+    }
+    .resume{
+        display: flexbox;
+        width: 8.5in;
+        min-width: 8.5in;
+        max-width: 8.5in;
+        overflow-y: hidden;
+        padding: 0.5in;
+        color: black;
+        background-color: white;
+    }
+    .row{
+        display: flex;
+    }
+    .column{
+        flex:50%;
+    }
+    .two-column{
+        columns: 2;
+        column-gap: 0in;
+    }
+    .divider{
+        width: 0.25in;
+    }
+    .skill{
+        padding-left: 0.25in;
+        text-indent: -0.25in;
+    }
+    .summary-text{
+        text-indent: 0.5in;
+        padding: 0.125in 1in
+    }
+    .padded{
+        padding: 0.05in 0.125in 0.05in 0.125in;
+    }
+    .project-title{
+        border-width: 0pt 0pt 1pt 0pt;
+        border-style: inset;
+        border-color: black;
+    }
+    .project-text{
+        text-indent: 0.125in;
+    }
+    .employment-date{
+        text-align: right;
+    }
+    .emp-desc{
+        text-indent: 0.25in;
+    }
+
+    #name{
+        height: 0.35in;
+    }
+</style>
+
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/50bb1f3f4e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="resume">
+            <header class="row" id="personal-information">
+                <div class="column">
+                    <h1 id="name">David Martinez</h1>
+                    <p id="title">Game Developer, Traditional and Digital Artist</p>
+                </div><div class="column">
+                    <p id="email"><i class="fas fa-envelope"></i><a href="mailto: davidsdoor@hotmail.com">davidsdoor@hotmail.com</a></p>
+                    <p id="location"><i class="fas fa-map-marker-alt"></i> Seattle, WA 98107</p>
+                </div><div class="column">
+                    <p><i class='fab fa-github'></i><a href="https://github.com/64bleat">64Bleat</a></p>
+                    <p><i class="fas fa-file"></i><a href="https://64bleat.github.io">Online Resume</a></p>
+                </div>
+            </header>
+
+            <section class="row summary-text" id="summary">
+                Software developer, game designer, and artist with 10+ years experience in computer science and fine art specializing in realtime interactive software. Self-driven by the joy of learning game development. Proud and dedicated to providing the best code possible. Happy to work on passionate development teams and continuing to learn.
+            </section>
+
+            <div class="row">
+                <div class="column" id="Education">
+                    <h2>Education</h2>
+                    <section class="padded">
+                        <div class="row">
+                            <i class="fas fa-user-graduate"></i>
+                            <div class="column" id="degree">
+                                <h3>2017 Bachelor of Arts</h3>
+                                <p>Eastern Washington University. Cheney, WA</p>
+                                <p>Major: Studio Art and Printmaking</p>
+                                <p>Minor: German</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-university"></i>
+                            <div class="column">
+                                <h3>Independent Courses</h3>
+                                <div class="two-column">
+                                    <p>Graphic Design</p>
+                                    <p>Visual Communication</p>
+                                    <p>Calculus IV</p>
+                                    <p>Linear Algebra</p>
+                                    <p>Physics I</p>
+                                    <p>Electrical Engineering I</p>
+                                    <p>Chemistry I</p>
+                                    <p>Geographic Information Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-free-code-camp"></i>
+                            <div class="column">
+                                <h3>Free Code Camp Certifications</h3>
+                                <p>Responsive Web Design</p>
+                                <p>JavaScript Algorithms and Data Structures</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <h2>Coding Language Skills</h2>
+                    <section class="padded">
+                        <p class="skill"><b>C#</b> <small>(5 years)</small> Game development and tool creation in Unity.
+                        <p class="skill"><b>Cg/HLSL</b> <small>(3 years)</small> Shaders and GPU processing in Unity</p>
+                        <p class="skill"><b>Java</b> <small>(3 years)</small> University data structure projects and Project Euler algorithm practice</p>
+                        <p class="skill"><b>C++</b> <small>(2 years)</small> Arduino Maze-Solving robot and game controller interfaces</p>
+                        <p class="skill"><b>JavaScript</b> <small>(1 year)</small> LeetCode algorithm practice and webpage scripting</p>
+                        <p class="skill"><b>HTML, CSS</b> <small>(1 year)</small> Basic webpage development</p>
+                    </section>  
+                </div><div class="divider">
+                </div><div class="column">
+                    <h2>Key Skills</h2>
+                    <section class="padded">
+                        <p class="skill">
+                            <b>Digital Art</b> painting, 3D modeling, texturing, animation
+                        </p>
+                        <p class="skill">
+                            <b>Traditional Art</b> printmaking, illustration, painting
+                        </p>
+                        <p class="skill">
+                            <b>Software Development</b> game development for PC, user experience, GUI systems, tool creation, memory optimization, asset creation, unit testing, XML serialization
+                        </p>
+                        <p class="skill">
+                            <b>Electronics</b> component replacement, part fabrication, maintenance, circuits, microcontroller systems
+                        </p>
+                        <p class= skill>
+                            <b>Mathematics</b> vector physics, geometry, computer algorithms
+                        </p>
+                    </section>
+
+                    <h2>Software Skills</h2>
+                    <section class="padded">
+                        <p class="skill"><b>Unity3d</b> <small>(5 years)</small>  Prototype game development, collaborative game projects, tool development. Focus: first-person mechanics, mesh generation, physics, optimization</p>
+                        <p class="skill"><b>Blender</b> <small>(2 years)</small>  3D modeling for game engines using mesh creation, UV mapping, Texture painting, and animation. Modeling replacement parts to be 3D-printed for electronics repair</p>
+                        <p class="skill"><b>Photoshop</b> <small>(10 years)</small>  Photo manipulation and digital painting</p>
+                        <p class="skill"><b>Git</b>  <small>(2 years)</small>  Version control for coding projects, documents, and distribution of Unity packages through GitHub</p>
+                        <p class="skill"><b>Microsoft Office/OpenOffice</b> <small>(5 years)</small> Spreadsheets and database management</p>
+                    </section>
+                </div>
+            </div>
+
+            <div>
+                <h2>Projects</h2>
+                <div class="padded row">
+                    <div class="column">
+                        <div class="project-title">
+                                <h3>First-Person Arena Action Prototype</h3>
+                                <small>Unity3D 2017 -- present</small>
+                        </div>
+                        <p class="project-text">
+                            Developed as a mechanic base for future games from the ground up with emphasis on modular features and physically accurate, intuitive movement. Included demos: bot combat arena, interactive Escher art, and an obstacle course movement showcase.
+                        </p>
+                        <p class="project-text">
+                            <b>Goal:</b> Create a reuseable collection of assets and gain experience in the most important aspects of game design.
+                        </p>
+                        <p class="project-text">
+                            <b>Features:</b> advanced physical character controller, arbitrary gravity, custom input manager, developer's console, bot AI, 3D mesh navigation, inventory system, scene serialization, OS-style GUI
+                        </p>
+                        <p class="project-text">
+                            <b>Technologies:</b> C#, .Net data structures, async methods, attributes, reflection, class polymorphism and interfaces
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <div class="project-title">
+                            <h3>Adventure Game Collaboration</h3>
+                            <small>Unity3D 2021 -- present</small>
+                        </div>
+                        <p class="project-text">
+                            Two-person collaborative project to create a first-person action adventure game demo using the FPS prototype to supply the core framework.
+                        </p>
+                        <p class="project-text">
+                            <b>Goal:</b> Develop a short demo serving as a modern re-imagining of the mechanics of the 1998 game <em>Trespasser</em> to gain experience in modeling, animation, level design, and collaboration.
+                        </p>
+                        <p class="project-text">
+                            <b>Involvement: </b> scripting, mesh and texture optimization, scene prefab asset creation
+                        </p>
+                        <p class="project-text">
+                            <b>Features:</b> Reaistic interactive environments, time-based architectural lighting
+                        </p>
+                        <p class="project-text">
+                            <b>Technologies:</b> Unity Collaborate (version control), mesh and texture optimization for game engines, texture baking, user-friendly tool development
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <div class="project-title">
+                            <h3>Astronomy Simulation Skybox Package</h3>
+                            <small>Unity3D 2019 -- present</small>
+                        </div>
+                        <p class="project-text">
+                            Developed a solution for accurately simulating the sky as seen from Earth. Capable of accurate positioning of the sun and stars for any time and place on Earth.
+                        </p>
+                        <p class="project-text">
+                            <b>Goal:</b> Develop and distribute through GitHub a Unity package for creating a realistic 3D skybox for any scene.
+                        </p>
+                        <p class="project-text">
+                            <b>Features:</b> Date, time, and location manager, API for astronomy formulas converted to use quaternions for simplicity and accuracy, procedurally generated stars using real celestial body data, location-accurate day/night cycles, skybox-matching dynamic lighting
+                        </p>
+                        <p class="project-text">
+                            <b>Technologies:</b> C# LINQ, shaders, Unity package distribution through GitHub, celestial coordinate systems
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="column">
+                        <div class="project-title">
+                            <h3>Isosurface Terrain Mesh Generation Package</h3>
+                            <small>Unity3D 2019 -- present</small>
+                        </div>
+                        <p class="project-text">
+                            Developed a Unity package for generating isosurface meshes ranging from infinite procedural terrain to realtime organic moving surfaces using a selection of custom signed-distance field modeling tools.
+                        </p>
+                        <p class="project-text">
+                            <b>Goal:</b> Develope and distribute through GitHub a versatile and efficient signed-distance modeling tool for Unity.
+                        </p>
+                        <p class="project-text">
+                            <b>Features:</b> infinite static procedural terrain generation on three axes, realtime small-scale chunk regeneration for moving surfaces, modular surface, shape, blending, and lattice algorithms
+                        </p>
+                        <p class="project-text">
+                            <b>Technologies:</b> GPU parallel processing, compute shaders, marching cube mesh generation algorithms, signed-distance field shape formulas, matrix transformation
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <h2>Work History</h2>
+                <div class="padded">
+                    <div class="row">
+                        <h3>Freelance Illustrator</h3>
+                        <span class="emp-desc column">Fine art sales and commission-based illustration</span>
+                        <span class="employment-date">April 2018 -- Present</span>
+                    </div>
+                    <div class="row">
+                        <h3>Inventory Inspector</h3>
+                        <span class="emp-desc column"> Temporary warehouse inventory database correction </span>
+                        <div class="employment-date">March 2021 -- April 2021</div>
+                    </div>
+                    <div class="row">
+                        <h3>Contract Home Renovator</h3>
+                        <span class="emp-desc column"> Demolition, painting, deck and siding construction</span>
+                        <div class="employment-date">June 2020 -- December 2020</div>
+                    </div>
+                    <div class="row">
+                        <h3>Mix Lead, Ferment Production</h3>
+                        <span class="emp-desc column"> Lead ingredient mixer, small company general labor</span>
+                        <div class="employment-date">August 2017 -- July 2018</div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </body>
+</html>
